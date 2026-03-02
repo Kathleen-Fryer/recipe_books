@@ -39,14 +39,14 @@ div{
     }
     a:hover{
         transform: scale(1.1);
-        color: rgb(227, 223, 223);
+        color: rgb(240, 202, 250);
     }
 }
 
 .form{
     justify-self: center;
     padding: 100px;
-    background-color: rgb(231, 231, 231);
+    background-color: rgb(240, 202, 250);
     border-radius: 20px;
     padding-block: 50px;
     font-size: larger;
