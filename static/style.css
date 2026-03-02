@@ -1,3 +1,61 @@
+button{
+        padding: 8px;
+        font-size: 16px;
+        background-color: rgb(112, 0, 144);
+        color: white;
+        border: solid rgb(112, 0, 144);
+        border-radius: 15px;
+        display: flex;
+        justify-self: center;
+        transition: ease 0.3s;
+    }
+    button:hover{
+        transform: scale(1.15);
+        background-color:rgb(112, 0, 144);
+        border-color: rgb(112, 0, 144);
+    }
+
+div{    
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar{
+    background-color: rgb(112, 0, 144);
+    border: 5px solid rgb(112, 0, 144);
+    border-radius: 10px;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    a, .item{
+        display: inline-flex;
+        flex-direction: column;
+        padding: 14px 16px;
+        text-decoration: none;
+        color: white;
+        transition: ease 0.2s;
+    }
+    a:hover{
+        transform: scale(1.1);
+        color: rgb(227, 223, 223);
+    }
+}
+
+.form{
+    justify-self: center;
+    padding: 100px;
+    background-color: rgb(231, 231, 231);
+    border-radius: 20px;
+    padding-block: 50px;
+    font-size: larger;
+    input{
+        margin: 5px;
+    }
+}
+
 body {
     font-size: 18px;
 }
+
