@@ -11,5 +11,17 @@
     </head>
     <body>
         <p>This is the homepage.</p>
+        <h1 class = 'browsing_h1'>All Recipe Books</h1>
+        <div id = 'scroll'>
+        {% for book in books %}
+            <div class = 'book'>
+            <a class = 'book_box' href = '/recipe_books/{{book.id}}'>
+            <h4>{{book.title}}</h4>
+            <p>by {{book.author}}</p>
+            <h4>Release year: {{book.release_year}}</h4>
+            </a>
+            </div>
+        {% endfor %}
+        </div>
     </body>
 </html>

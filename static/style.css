@@ -59,3 +59,62 @@ body {
     font-size: 18px;
 }
 
+.book{
+    justify-self: center;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(240, 202, 250);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 5px;
+    width: 33%;
+    h4{
+        justify-self: center;
+    }
+} 
+.single_book{
+    justify-self: center;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(240, 202, 250);
+    border-radius: 10px;
+    padding: 20px;
+    padding-top: 30px;
+    margin: 5px;
+    width: 50%;
+    height: auto;
+    h4, p, a, h1{
+        justify-self: center;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+    }
+    img{
+        display: block;
+        max-height: 400px;
+        max-width: 400%;
+        width: auto;
+        height: auto;
+    }
+}
+
+.line_center{
+    justify-self: center;
+    justify-items: center;
+    align-items: center;
+}
+
+#scroll {
+    max-height: 650px;
+    overflow-y: auto;
+}
+
+.book_box{
+    text-decoration: none;
+    color: black;
+}
+.space:hover{
+    border: 2px solid rgb(112, 0, 144);
+}
