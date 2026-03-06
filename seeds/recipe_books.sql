@@ -21,7 +21,7 @@ CREATE TABLE recipes (
     prep_time INTEGER,
     cook_time INTEGER,
     meal_type VARCHAR(255),
-    appliances VARCHAR(255)
+    appliances VARCHAR(255),
     book_id int,
     constraint fk_book foreign key(book_id)
     references books(id)
@@ -38,7 +38,7 @@ INSERT INTO books (title, author, release_year) VALUES
 
 
 
-INSERT INTO recipes (title, ingredients, prep_time, cook_time, meal_type, appliances, book_id) VALUES
-    ('Freyas Tea', 'raspberries, blackberries, sugar, water, mint, lemon juice, earl grey tea bags', 15, 30, 'soft drink', 'hob, fridge'),
-    ('Fast-Lane Salmon', 'puff pastry, salmon, salt, black pepper, creme fraiche, parmesan, parsley, eggs, cucumbers, spring onions', 10, 20, 'main course', 'oven, hob'),
-    ('Lemon and Herb Chicken Flatties with Celariac Remoulade', 'lemon juice, olive oil, garlic, mixed herbs, parsley, chicken, lemons, salt, black pepper, rocket, celeriac, mayonnaise, creme fraiche, mustard', 45, 10, 'main course', 'hob');
+INSERT INTO recipes (title, ingredients, allergens, prep_time, cook_time, meal_type, appliances, book_id) VALUES
+    ('Freyas Tea', 'raspberries, blackberries, sugar, water, mint, lemon juice, earl grey tea bags', 'none', 15, 30, 'soft drink', 'hob, fridge',1),
+    ('Fast-Lane Salmon', 'puff pastry, salmon, salt, black pepper, creme fraiche, parmesan, parsley, eggs, cucumbers, spring onions', 'milk', 10, 20, 'main course', 'oven, hob',2),
+    ('Lemon and Herb Chicken Flatties with Celariac Remoulade', 'lemon juice, olive oil, garlic, mixed herbs, parsley, chicken, lemons, salt, black pepper, rocket, celeriac, mayonnaise, creme fraiche, mustard', 'milk', 45, 10, 'main course', 'hob',3);

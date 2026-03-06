@@ -59,6 +59,16 @@ body {
     font-size: 18px;
 }
 
+.browsing_books{
+    display: flex;
+}
+.browsing_h1{
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .book{
     justify-self: center;
     justify-items: center;
