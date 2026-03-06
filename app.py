@@ -1,6 +1,8 @@
 import os
 from flask import Flask, request, render_template
 from lib.database_connection import get_flask_database_connection
+from lib.book_repository import BookRepository
+from lib.book import Book
 
 # Create a new Flask app
 app = Flask(__name__)
@@ -13,6 +15,9 @@ app = Flask(__name__)
 #   ; open http://localhost:5001/index
 @app.route('/', methods=['GET'])
 def get_home():
+    connection = get_flask_database_connection(app)
+    book_repository = BookRepository(connection)
+    books = book_repository.all()
     return render_template('index.html')
 
 @app.route('/index', methods=['GET'])
